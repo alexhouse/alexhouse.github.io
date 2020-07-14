@@ -1,5 +1,83 @@
 <html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/regular.css" integrity="sha384-aDoEE1PtWF0YZqVk7el3O+QPApPko7v9/7VYyuzjhHWwJ3cmn0m7xE3/FkHSpPNT" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/brands.css" integrity="sha384-pmyS4Hp0pc0tA0poF+AKYeURgyIgYLt12rD/6gLC98rTImbSYIe75vT2/3jK4zIh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/fontawesome.css" integrity="sha384-O6duc3QftgMWW3awKiGYswymy288kVFZgGWC/4YCl48Y0codWJRgs8DA0N4dX/zx" crossorigin="anonymous">
+
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .background {
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        z-index: -1;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .bike {
+        background: transparent url('bike.jpg') 0 0 no-repeat;
+        background-size: cover;
+    }
+    .heli {
+        background: transparent url('heli.jpg') 0 0 no-repeat;
+        background-size: cover;
+        opacity: 0;
+        animation: fadeInOut ease-in-out infinite 10s alternate;
+    }
+    @keyframes fadeInOut {
+        0% { opacity: 1; }
+        45% { opacity: 1; }
+        55% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-end;
+        height: 100vh;
+        width: 100vw;
+    }
+    #panel {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        width: 20em;
+        margin: 20px;
+        padding: 20px;
+    }
+    h1 {
+        margin-bottom: 0.5em;
+    }
+
+    a i {
+        margin-right: 0.5em;
+    }
+    .mb {
+        margin-bottom: 0.5em;
+    }
+</style>
+    </head>
     <body>
-        <h1>Alex House</h1>
+        <div class="background bike"></div>
+        <div class="background heli"></div>
+        <div class="container">
+        <section id="panel">
+            <h1>Alex House</h1>
+            <p class="mb">
+                Developer, pilot, enthusiast
+            </p>
+            <p><a href="https://twitter.com/house_alexander" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></p>
+            <p><a href="https://github.com/alexhouse" target="_blank"><i class="fab fa-github"></i>GitHub</a></p>
+            <p><a href="https://instagram.com/heli.house" target="_blank"><i class="fab fa-instagram"></i>Instagram</a></p>
+        </section>
+        </div>
     </body>
 </html>
