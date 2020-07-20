@@ -5,7 +5,7 @@
 }
 
 .background {
-    transition: opacity 3s fade-in-out;
+    transition: opacity 5s ease-in-out;
     background-size: cover;
     width: 100vw;
     height: 100vh;

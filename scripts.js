@@ -10,4 +10,4 @@ setInterval(function() {
     }
 
     backgrounds[active].classList.add('show');
-}, 5000)
+}, 10000)
