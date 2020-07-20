@@ -1,6 +1,8 @@
 let backgrounds = document.getElementsByClassName('background');
 let active = localStorage.getItem('active') || 0;
 
+backgrounds[active].classList.add('show');
+
 setInterval(function() {
     backgrounds[active].classList.remove('show');
 
