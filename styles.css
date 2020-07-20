@@ -66,3 +66,11 @@ a i {
     display: block;
     margin-top: 1em;
 }
+
+.flex {
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+    justify-content: between;
+}
