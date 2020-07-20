@@ -5,6 +5,7 @@
 }
 
 .background {
+    transition: opacity 3s fade-in-out;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -13,25 +14,23 @@
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0;
+}
+.background.show {
+    opacity: 1;
 }
 
 .bike {
     background: transparent url('bike.jpg') 0 0 no-repeat;
     background-size: cover;
 }
-
 .heli {
     background: transparent url('heli.jpg') 0 0 no-repeat;
     background-size: cover;
-    opacity: 0;
-    animation: fadeInOut ease-in-out infinite 10s alternate;
 }
-
-@keyframes fadeInOut {
-    0% { opacity: 1; }
-    45% { opacity: 1; }
-    55% { opacity: 0; }
-    100% { opacity: 0; }
+.snow {
+    background: transparent url('snow.jpg') 0 0 no-repeat;
+    background-size: cover;
 }
 
 .container {
