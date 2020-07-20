@@ -72,5 +72,5 @@ a i {
 }
 .flex-row {
     flex-direction: row;
-    justify-content: between;
+    justify-content: space-between;
 }
